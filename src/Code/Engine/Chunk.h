@@ -15,7 +15,7 @@ namespace DJ
 		Block& GetBlock(int x, int y) {
 			return chunkData[x + y * EngineSettings::Settings().ChunkWidth()];
 		}
-		Block& operator[](v2f pos) { return GetBlock(pos.x, pos.y); }
+		Block& operator[](v2i pos) { return GetBlock(pos.x, pos.y); }
 
 	private:
 		Block* chunkData;

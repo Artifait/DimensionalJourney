@@ -134,14 +134,16 @@
     <ClCompile Include="src\Code\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Code\DataStruct\v2f.h" />
+    <ClInclude Include="src\Code\DataStruct\v2i.h" />
     <ClInclude Include="src\Code\Engine\Block.h" />
     <ClInclude Include="src\Code\Engine\BlockPrototype.h" />
     <ClInclude Include="src\Code\Engine\Chunk.h" />
     <ClInclude Include="src\Code\Engine\DemoBlockDataBase.h" />
     <ClInclude Include="src\Code\Engine\EngineSettings.h" />
     <ClInclude Include="src\Code\Engine\GameEngine.h" />
+    <ClInclude Include="src\Code\Engine\Typedefs.h" />
     <ClInclude Include="src\Code\Engine\World.h" />
-    <ClInclude Include="src\Lib\INI.h" />
     <ClInclude Include="src\Lib\nlohmann\json.hpp" />
     <ClInclude Include="src\Lib\nlohmann\json_fwd.hpp" />
     <ClInclude Include="src\Lib\olcPGEX_TransformedView.h" />
@@ -149,7 +151,7 @@
     <ClInclude Include="src\Lib\zip.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\Code\Engine\DJEngineSettings.ini" />
+    <None Include="x64\Debug\DJEngineSettings.ini" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

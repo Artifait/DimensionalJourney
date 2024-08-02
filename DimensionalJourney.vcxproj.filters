@@ -29,9 +29,6 @@
     <ClInclude Include="src\Code\Engine\EngineSettings.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="src\Lib\INI.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="src\Code\Engine\World.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -59,8 +56,17 @@
     <ClInclude Include="src\Lib\zip.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="src\Code\DataStruct\v2f.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Code\Engine\Typedefs.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Code\DataStruct\v2i.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\Code\Engine\DJEngineSettings.ini" />
+    <None Include="x64\Debug\DJEngineSettings.ini" />
   </ItemGroup>
 </Project>

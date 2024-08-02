@@ -16,6 +16,8 @@ namespace DJ
         v2f operator*(const v2f& other) const { return v2f(x * other.x, y * other.y); }
         v2f operator/(float scalar)     const { return v2f(x / scalar, y / scalar); }
         v2f operator/(v2f scalar)       const { return v2f(x / scalar.x, y / scalar.y); }
+        v2f operator%(v2f scalar)       const { return v2f((int)x % (int)scalar.x, (int)y % (int)scalar.y); }
+
 
         v2f& operator=(const v2f& other) {
             if (this != &other) {
@@ -52,6 +54,7 @@ namespace DJ
 
         float Mag() const { return std::sqrt(x * x + y * y); }
         float Mag2() const { return x * x + y * y; }
+        v2f GetFloor() const { return v2f(std::floor(x), std::floor(y)); }
 
         void Norm() {
             float length = Mag();
@@ -112,6 +115,13 @@ namespace DJ
             return *this;
         }
 #endif
-
 	};
+}
+namespace std {
+    template <>
+    struct hash<DJ::v2f> {
+        size_t operator()(const DJ::v2f& v) const {
+            return hash<float>()(v.x) ^ hash<float>()(v.y);
+        }
+    };
 }
